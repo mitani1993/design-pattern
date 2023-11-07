@@ -1,0 +1,8 @@
+services:
+  web:
+    image: openjdk:11
+    ports:
+      - "5555:5555"
+    tty: true
+    volumes:
+      - ./src:/workspace:cached
